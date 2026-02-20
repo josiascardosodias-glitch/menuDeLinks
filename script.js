@@ -3,9 +3,9 @@ imgButton.addEventListener("click", () => {
     popup.classList.toggle("active");
 
     if (popup.classList.contains("active")) {
-        imgButton.src = "../src/styles/assets/images/hotbar-right.png";
+        imgButton.src = "./assets/images/hotbar-right.png";
     } else {
-        imgButton.src = "../src/styles/assets/images/hotbar-left.png";
+        imgButton.src = "./assets/images/hotbar-left.png";
     }
 });
 
