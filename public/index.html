@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/app/components/background.css">
+    <link rel="stylesheet" href="../src/styles/global/style.css">
+    <link rel="stylesheet" href="../src/app/components/popop.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>MenuDeLinks</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div id="container-profile">
+                <div id="profile">
+                    <img src="../src/styles/assets/images/profile-img.png" alt="">
+                    <span>@JosiasCardoso</span>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="container-button">
+                <!--<button type="button" class="button"> Conheça o meu Portifólio </button>-->
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="button"><p class="bntTxt"> Linkedln </p></a>
+                <a href="https://github.com/josiascardosodias-glitch" target="_self" class="button"><p class="bntTxt"> GitHub </p></a>
+                <a href="https://www.tiktok.com/@user177512245?lang=pt-BR" target="_self" class="button"><p class="bntTxt"> TikTok </p></a>
+                <a href="https://www.threads.com/@josiascardosodiasglitch" target="_self" class="button"><p class="bntTxt"> Threads </p></a>
+                <a href="https://www.instagram.com/josiascardosodiasglitch/" target="_self" class="button"><p class="bntTxt"> Instagram </p></a>
+            </div>
+            <div class="animated-background">
+            <div class="animated-background__blue"></div>
+            <div class="animated-background__purple"></div>
+            </div>
+            <div id="app"></div>
+
+            <!-- Aside com botão -->
+            <aside class="whatsapp-container">
+                <img src="../src/styles/assets/images/hotbar-left.png" alt="#" id="imgButton" class="whatsapp-btn">
+            <!-- Popup -->
+            <div id="popup" class="popup">
+                <p>Olá! gostaria de ser redirecionado para o whatsapp?</p>
+                <div class="popup-buttons">
+                    <button type="button" id="goWhats"><p>Ir para whatsapp</p></button>
+                </div>
+            </div>
+            </aside>
+        </section>
+    </main>
+    <script src="../src/script.js"></script>
+</body>
+</html>

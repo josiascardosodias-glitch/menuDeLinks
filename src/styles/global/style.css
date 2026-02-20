@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--txt-font);
+
+    cursor: default;
+}
+
+:root {
+    --bg-color: rgba(212, 212, 212, 0.2);
+    --txt-color: #D4D4D4;
+    --txt-font: "inter", sans-serif;
+}
+
+/* Container profile */
+
+#container-profile {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 16px;
+
+    width: 150px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#profile img {
+    height: 150px;
+}
+
+#profile span {
+    color: var(--txt-color);
+    font-weight: 700;
+}
+
+/* container button */
+
+#container-button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 24px;
+
+    gap: 16px;
+    height: auto;
+}
+
+.button {
+    border: rgba(22, 22, 22, 0.3) 1px solid;
+    background: var(--bg-color);
+    border-radius: 999px;
+    height: 56px;
+    width: 533px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    display: block;
+    margin: auto;
+
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--txt-color);
+    transition: 0.2s;
+}
+
+.bntTxt {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2;
+}
+
+/* interação desktop */
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.050);
+    border: rgb(14, 14, 14) 1px solid;
+    transform: scale(1.07);
+}
+
+.bntTxt:hover {
+    color: rgb(14, 14, 14);
+}
+
+/* interação mobile */
+.button:active {
+    background-color: rgba(255, 255, 255, 0.050);
+    border: rgb(14, 14, 14) 1px solid;
+    color: rgb(14, 14, 14);
+    transform: scale(1.07);
+}
+
+.bntTxt:active {
+    color: rgb(14, 14, 14);
+}
+
+/* asaide container */
+
+@media (max-width: 700px) {
+    .button {
+        width: 413px;
+    }
+}

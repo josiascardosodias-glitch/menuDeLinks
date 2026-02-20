@@ -1,0 +1,70 @@
+* {
+margin: 0;
+font-family: var(--txt-font);
+color: var(--txt-color);
+}
+
+/* Aside fixo no canto inferior direito */
+.whatsapp-container {
+position: fixed;
+display: flex;
+align-items: center;
+gap: 8px;
+top: 40px;
+right: 8px;
+}
+
+/* Imagem botão */
+.whatsapp-btn {
+width: 32px;
+transition: 0.3s;
+}
+
+/* interação desktop */
+.whatsapp-btn:hover {
+transform: scale(1.1);
+}
+
+/* interação mobile */
+.whatsapp-btn:active {
+    transform: scale(1.1);
+}
+
+/* Popup escondido */
+.popup {
+width: auto;
+background: var(--bg-color);
+padding: 8px;
+border-radius: 12px;
+display: none;
+}
+
+/* Mostrar popup */
+.popup.active {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.popup button {
+    background: rgb(8, 141, 19);
+    color: var(--txt-color);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.2s;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.popup button:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 800px) {
+    .popup {
+        width: 20vw;
+        align-items: center;
+    }
+}
