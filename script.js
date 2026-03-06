@@ -24,3 +24,7 @@ buttons.forEach((btn) => {
         document.body.classList.remove("activeBnt");
     });
 });
+
+document.addEventListener("pointerup", () => {
+    document.body.classList.remove("activeBnt");
+});
