@@ -20,11 +20,11 @@ buttons.forEach((btn) => {
     btn.addEventListener("pointerdown", () => {
         document.body.classList.add("activeBnt");
     });
-    btn.addEventListener("pointerup", () => {
-        document.body.classList.remove("activeBnt");
-    });
 });
 
-document.addEventListener("pointerup", () => {
+const removeActive = () => {
     document.body.classList.remove("activeBnt");
-});
+}
+
+document.addEventListener("pointerup", removeActive);
+document.addEventListener("pointercancel", removeActive);
