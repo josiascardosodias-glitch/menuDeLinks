@@ -97,18 +97,6 @@
     color: rgb(14, 14, 14);
 }
 
-/* interação mobile */
-.button:active {
-    background-color: rgba(255, 255, 255, 0.050);
-    border: rgb(14, 14, 14) 1px solid;
-    color: rgb(14, 14, 14);
-    transform: scale(1.07);
-}
-
-.bntTxt:active {
-    color: rgb(14, 14, 14);
-}
-
 /* asaide container */
 
 @media (max-width: 700px) {
